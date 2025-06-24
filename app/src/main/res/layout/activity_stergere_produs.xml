@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="32dp"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:id="@+id/layoutStergere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selectează produsul"
+            android:textSize="20sp"
+            android:textColor="#FFF"
+            android:layout_marginBottom="12dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerProduse"
+            android:layout_width="320dp"
+            android:layout_height="56dp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/tvCantitateTotala"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cantitate: -"
+            android:textSize="18sp"
+            android:textColor="#FFF"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cantitate de șters"
+            android:textSize="20sp"
+            android:textColor="#FFF"
+            android:layout_marginBottom="12dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerCantitate"
+            android:layout_width="320dp"
+            android:layout_height="56dp"
+            android:layout_marginBottom="28dp"/>
+
+        <Button
+            android:id="@+id/btnSterge"
+            android:text="Șterge"
+            style="@style/TransparentButton"
+            android:textSize="18sp"
+            android:layout_width="240dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="12dp"/>
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="240dp"
+            android:layout_height="64dp"
+            android:text="Înapoi la meniu"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            style="@style/TransparentButton"/>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

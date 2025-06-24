@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:id="@+id/formLayout"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <EditText
+            android:id="@+id/etNume"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Nume produs"
+            android:inputType="text"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/etData"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Data expirare (YYYY-MM-DD)"
+            android:focusable="false"
+            android:clickable="true"
+            android:inputType="none"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/etCantitate"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Cantitate"
+            android:inputType="number"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/etNotes"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Comentarii (optional)"
+            android:inputType="textMultiLine"
+            android:minLines="2"
+            android:layout_marginBottom="24dp"/>
+
+        <Button
+            android:id="@+id/btnAdauga"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Adaugă produs"
+            style="@style/TransparentButton"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Înapoi la meniu"
+            style="@style/TransparentButton"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

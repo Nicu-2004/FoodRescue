@@ -1,0 +1,12 @@
+<resources>
+    <!-- Stilul pentru butoane transparente cu outline alb și text alb -->
+    <style name="TransparentButton" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/button_outline</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:padding">12dp</item>
+    </style>
+</resources>
+
+
+
